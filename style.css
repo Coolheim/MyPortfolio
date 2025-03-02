@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('Fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+  
+html, body {
+    margin: 0;
+    padding: 2%;
+    background: #00020f;
+}
+  
+.container {
+    display: flex;
+    gap: 3%;
+    width: 100%;
+}
+  
+.containerDiv {
+    flex: 1;
+    height: 500px;
+    background-color: #00080f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #001757;
+    box-shadow: 0 0 20px rgb(0, 255, 255, 1);
+}
+
+.titleOfContainers {
+    font-family: 'RobotoMono', Calibri;
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+}
+  
+.projectsA {
+    font-family: 'RobotoMono', Calibri, sans-serif;
+    color: #a1daff; 
+    text-decoration: none;
+    margin-top: 15px; 
+    font-size: 16px;
+}
+  
+.projects {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0 0 0 0; 
+}
+  
+.projects li {
+    font-family: 'RobotoMono', Calibri, sans-serif; 
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+  
+.projects li::before {
+    content: "•"; 
+    color: #a1daff; 
+    margin-right: 10px; 
+}
+
+.projects li a:hover {
+    color: #53b7fa;
+}
+
+.myPhoto {
+    height: 75px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(0, 255, 255, 1);
+}
+
+.photoAndNameDiv {
+    display: flex;
+    gap: 20px;
+}
+
+.photoAndNameDiv p {
+    color: #fff;
+    font-family: 'RobotoMono', Calibri, sans-serif;
+}
+
+.icons {
+    filter: brightness(0) invert(1); 
+    transition: transform 0.3s ease; 
+}
+
+.icons:hover {
+    transform: scale(1.2); 
+}
+
+.downloadCvBtn {
+    background: #fff; 
+    color: #000; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    font-family: 'RobotoMono', Calibri, sans-serif;
+    font-size: 16px;
+    cursor: pointer; 
+    box-shadow: 0 0 15px rgba(0, 255, 255, 1);
+    display: block; 
+    margin: 20px auto; 
+    width: 60%; 
+    text-decoration: none;
+}
+
+.downloadCvBtn:hover {
+    background: #53b7fa; 
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); 
+    text-decoration: none;
+}
+
+.downloadBtnContainer {
+    width: 80%;
+    text-align: center; 
+    border-radius: 15px;
+    margin-top: 25px;
+    background: #00020f;
+    box-shadow: 0 0 20px rgb(0, 255, 255, 1);
+}
+
+
+
+@media (max-width: 768px) { 
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .container div {
+        max-width: 500px;
+        width: 100%; 
+        margin-bottom: 10%;
+        flex: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .downloadCvBtn {
+        width: 80%; /* Třeba 80 % šířky pro lepší vzhled na mobilu */
+        max-width: 200px; /* Maximální šířka */
+    }
+    
+}
