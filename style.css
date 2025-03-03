@@ -17,7 +17,7 @@ html, body {
   
 .containerDiv {
     flex: 1;
-    height: 500px;
+    height: auto;
     background-color: #00080f;
     display: flex;
     flex-direction: column;
@@ -99,11 +99,12 @@ html, body {
     font-family: 'RobotoMono', Calibri, sans-serif;
     font-size: 16px;
     cursor: pointer; 
-    box-shadow: 0 0 15px rgba(0, 255, 255, 1);
+    box-shadow: 0 0 5px rgba(0, 255, 255, 1);
     display: block; 
     margin: 20px auto; 
     width: 60%; 
     text-decoration: none;
+    transition: box-shadow 0.3s ease;
 }
 
 .downloadCvBtn:hover {
@@ -119,9 +120,19 @@ html, body {
     border-radius: 15px;
     margin-top: 25px;
     background: #00020f;
+    box-shadow: 0 0 5px rgb(0, 255, 255, 1);
+    margin-bottom: 25px;
+    transition: box-shadow 0.3s ease;
+}
+
+.downloadBtnContainer:hover {
     box-shadow: 0 0 20px rgb(0, 255, 255, 1);
 }
 
+.line {
+    width: 90%;
+    margin-bottom: 25px;
+}
 
 
 @media (max-width: 768px) { 
