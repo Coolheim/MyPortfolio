@@ -7,8 +7,14 @@ html, body {
     margin: 0;
     padding: 2%;
     background: #00020f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
   
+
+
+
 .container {
     display: flex;
     gap: 3%;
@@ -134,6 +140,14 @@ html, body {
     margin-bottom: 25px;
 }
 
+.time-container {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding: 20px;   
+    font-size: 80px;
+    font-family: monospace;
+}
 
 @media (max-width: 768px) { 
     .container {
