@@ -10,10 +10,8 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'RobotoMono', Calibri, sans-serif;
 }
-  
-
-
 
 .container {
     display: flex;
@@ -37,7 +35,7 @@ html, body {
 .titleOfContainers {
     font-family: 'RobotoMono', Calibri;
     font-weight: bold;
-    font-size: ;
+    font-size: 25px;
     color: #ffffff;
 }
   
@@ -75,7 +73,14 @@ html, body {
     height: 75px;
     border-radius: 20px;
     box-shadow: 0 0 15px rgb(0, 255, 255, 1);
+    transition: transform 0.2s ease-in-out;
 }
+
+.myPhoto:hover {
+    transform: scale(1.2); /* Zvětšení o 50 % */
+    transition: transform 0.2s ease-in-out;
+}
+
 
 .photoAndNameDiv {
     display: flex;
@@ -147,6 +152,25 @@ html, body {
     padding: 20px;   
     font-size: 80px;
     font-family: monospace;
+}
+
+  
+.aboutMeP {
+    color: #fff;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.techSkillsContainer {
+    color: #fff;
+}
+
+.icons2 {
+    filter: brightness(0) invert(1); 
+}
+
+.iconAndSkill {
+    display: flex;
 }
 
 @media (max-width: 768px) { 
