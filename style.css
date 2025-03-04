@@ -168,9 +168,60 @@ html, body {
 .icons2 {
     filter: brightness(0) invert(1); 
 }
+.techSkillsContainer {
+    height: 150px; 
+    width: 70%;
+    overflow-y: auto; /* Vertikální posuvník, pokud je obsah příliš dlouhý */
+    background-color: #00020f; /* Tmavé pozadí podle požadavku */
+    box-shadow: 0 0 5px rgba(0, 255, 255, 1); /* Modrý záblesk podle požadavku */
+    padding: 25px; /* Padding podle požadavku */
+    transition: box-shadow 0.3s ease; /* Přechod stínu při najetí */
+    border-radius: 15px; /* Zaoblení rohů podle požadavku */
+}
 
+/* Stylování posuvníku (pro WebKit prohlížeče, např. Chrome, Safari) */
+.techSkillsContainer::-webkit-scrollbar {
+    width: 12px; /* Šířka posuvníku */
+}
+
+.techSkillsContainer::-webkit-scrollbar-track {
+    background: #00020f; /* Stejné pozadí jako kontejner, aby ladilo */
+    border-radius: 15px; /* Zaoblení posuvníku shodné s kontejnerem */
+}
+
+.techSkillsContainer::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 255, 0.5); /* Poloprůhledná modrá pro kolečko, aby ladila s box-shadow */
+    border-radius: 15px; /* Zaoblení kolečka shodné s kontejnerem */
+    border: 2px solid #00020f; /* Opcionalní: okraj, aby se oddělilo od pozadí */
+}
+
+.techSkillsContainer::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 255, 0.8); /* Světlejší modrá při najetí myší */
+}
+
+/* Styl pro Firefox (pokud je potřeba, i když moderní Firefox často podporuje WebKit styly) */
+.techSkillsContainer {
+    scrollbar-width: thin; /* Tenký posuvník pro Firefox */
+    scrollbar-color: rgba(0, 255, 255, 0.5) #00020f; /* Barva kolečka a pozadí pro Firefox */
+}
+
+.techSkillsContainer:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1); /* Větší stín při najetí myší podle požadavku */
+}
+
+/* Umístění ikon a textu vedle sebe v .iconAndSkill (zůstává stejné, pokud nechcete měnit) */
 .iconAndSkill {
-    display: flex;
+    display: flex; /* Flexbox pro horizontální zarovnání */
+    align-items: center; /* Vertikální zarovnání na střed */
+    margin-bottom: 10px; /* Mezera mezi jednotlivými položkami */
+}
+
+.iconAndSkill img {
+    margin-right: 10px; /* Mezera mezi ikonou a textem */
+}
+
+.iconAndSkill p {
+    margin: 0; /* Odstranění výchozího odsazení textu */
 }
 
 @media (max-width: 768px) { 
