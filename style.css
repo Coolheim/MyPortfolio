@@ -38,36 +38,6 @@ html, body {
     font-size: 25px;
     color: #ffffff;
 }
-  
-.projectsA {
-    font-family: 'RobotoMono', Calibri, sans-serif;
-    color: #a1daff; 
-    text-decoration: none;
-    margin-top: 15px; 
-    font-size: 16px;
-}
-  
-.projects {
-    list-style-type: none;
-    padding: 0; 
-    margin: 0 0 0 0; 
-}
-  
-.projects li {
-    font-family: 'RobotoMono', Calibri, sans-serif; 
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-  
-.projects li::before {
-    content: "•"; 
-    color: #a1daff; 
-    margin-right: 10px; 
-}
-
-.projects li a:hover {
-    color: #53b7fa;
-}
 
 .myPhoto {
     height: 75px;
@@ -223,6 +193,55 @@ html, body {
 .iconAndSkill p {
     margin: 0; /* Odstranění výchozího odsazení textu */
 }
+
+.projectHref {
+    display: inline-block;
+    width: 300px; /* Šířka tlačítka (upravte podle potřeby) */
+    height: 150px; /* Výška tlačítka (upravte podle potřeby) */
+    background-image: url('img/projetcDict.png'); /* Obrázek jako pozadí */
+    background-size: cover; /* Obrázek pokryje celou plochu */
+    background-position: center; /* Centrování obrázku */
+    background-repeat: no-repeat; /* Žádné opakování obrázku */
+    border: none;
+    border-radius: 5px; /* Zaoblené rohy podle designu */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lehký stín */
+    position: relative; /* Pro umístění textu nad obrázek */
+    transition: scale 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 1);
+    margin-top: 20px;
+}
+
+.projectHref .text {
+    position: absolute; /* Text nad obrázkem */
+    top: 50%; /* Vertikální centrování */
+    left: 50%; /* Horizontální centrování */
+    transform: translate(-50%, -50%); /* Přesné centrování */
+    color: white; /* Bílý text */
+    font-size: 25px; /* Velikost textu */
+    font-weight: bold; /* Tučné písmo pro lepší čitelnost */
+    text-align: center;
+    z-index: 1; /* Zajistí, že text je nad obrázkem */
+}
+
+.projectHref .image-placeholder {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ztmavení obrázku */
+}
+
+.projectHref:hover {
+    scale: 1.1;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+}
+
+.projectHref:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 @media (max-width: 768px) { 
     .container {
