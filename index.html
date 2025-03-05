@@ -7,13 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="time-container">
-        <span id="hrs">00</span>
-        <span>:</span>
-        <span id="mns">00</span>
-        <span>:</span>
-        <span id="scs">00</span>
-    </div>
+
     <div class="container">
         <div class="containerDiv">
             <p class="titleOfContainers">About me</p>
@@ -75,19 +69,5 @@
 
         </div>
     </div>
-
-    <script>
-        let hrs = document.getElementById("hrs")
-        let mns = document.getElementById("mns")
-        let scs = document.getElementById("scs")
-
-        setInterval(() => {
-            let currentTime = new Date ()
-
-            hrs.innerHTML = (currentTime.getHours() < 10 ? "0" : "" ) + currentTime.getHours()
-            mns.innerHTML = (currentTime.getMinutes() < 10 ? "0" : "" ) + currentTime.getMinutes()
-            scs.innerHTML = (currentTime.getSeconds() < 10 ? "0" : "" ) + currentTime.getSeconds()
-        }, 1000)
-    </script>
 </body>
 </html>

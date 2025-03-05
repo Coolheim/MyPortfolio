@@ -7,9 +7,6 @@ html, body {
     margin: 0;
     padding: 2%;
     background: #00020f;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: 'RobotoMono', Calibri, sans-serif;
 }
 
@@ -113,15 +110,6 @@ html, body {
 .line {
     width: 90%;
     margin-bottom: 25px;
-}
-
-.time-container {
-    display: flex;
-    color: #fff;
-    justify-content: center;
-    padding: 20px;   
-    font-size: 80px;
-    font-family: monospace;
 }
 
   
